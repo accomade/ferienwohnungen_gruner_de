@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+	<title>Ferienwohnung Familie Gruner - Kontakt</title>
+	<link rel="stylesheet" href="lib/styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="lib/print.css" media="print" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	 <script type="text/javascript" src="sliderengine/jquery.js"></script><script type="text/javascript" src="sliderengine/jquery.hislider.js"></script>
+</head>
+<body>
+<div id="wrapper"><!-- #wrapper -->
+
+	<header><!-- header -->	
+		<!----begin------Insert to your webpage where you want to display the slider-->
+        <div id='hislider1' style=" width:940px;  height:202px; margin: 0 auto;">
+        	
+        	<noscript>The slider is powered by <strong>Hi Slider</strong>, a easy jQuery image slider from <a target="_blank" href="hislider.com">hislider.com</a>. Please enable JavaScript to view.</noscript>
+        </div>
+      <!----end------Insert to your webpage where you want to display the slider-->
+	</header><!-- end of header -->
+	<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Startseite</a></li>
+				<li><a href="ferienwohnung.html">Ferienwohnung</a></li>
+				<li><a href="ferienhaus.html">Ferienhaus</a></li>
+				<li><a href="preise.html">Preise</a></li>
+				<li><a href="belegung.html">Belegung</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->
+	
+	<section id="main"><!-- #main content and sidebar area -->
+			<section id="content"><!-- #content -->
+			
+        		<article>
+							<h2>Kontakt</h2>
+
+							<p>
+Frau Anni Gruner<br>
+Dorfstr. 15b<br>
+01728 Bannewitz, OT Goppeln<br>
+Funktelefon: 0157 77 41 40 70<br>
+
+E-Mail: <a href="mailto:anni_gruner@web.de">anni_gruner@web.de</a>
+								</p />
+</article>
+
+<atricle>
+	<h3>Lage der Wohnung in  Koserow</h3>
+			  <div id='mapDiv2'></div>
+  			<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  			<script>
+    		map = new OpenLayers.Map("mapDiv2");
+    		map.addLayer(new OpenLayers.Layer.OSM());
+    		var lonLat = new OpenLayers.LonLat(14.0007877349854,54.0518653392792)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+				var lonLatMarker = new OpenLayers.LonLat(14.000000,54.052890)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+          
+    			var zoom=15;
+    			var markers = new OpenLayers.Layer.Markers( "Markers" );
+    			map.addLayer(markers);
+    			markers.addMarker(new OpenLayers.Marker(lonLatMarker)); 
+    			map.setCenter (lonLat, zoom);
+			</script>
+		<br>
+			<div id="osm"><p>&copy;<a href="http://www.openstreetmap.org">OpenStreetMap</a>
+   			und <a href="http://www.openstreetmap.org/copyright">Mitwirkende</a>,
+ 			<a href="http://creativecommons.org/licenses/by-sa/2.0/deed.de">CC-BY-SA</a></p>
+ 			</div>
+ 			
+</atricle>
+
+						
+						
+<atricle>
+	<h3>Lage Ferienhaus in Zinnowitz</h3>
+			  <div id='mapDiv'></div>
+  			<script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+  			<script>
+    		map = new OpenLayers.Map("mapDiv");
+    		map.addLayer(new OpenLayers.Layer.OSM());
+    		var lonLat = new OpenLayers.LonLat(13.8960,54.0806)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+				var lonLatMarker = new OpenLayers.LonLat(13.8959,54.0806)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+          
+    			var zoom=15;
+    			var markers = new OpenLayers.Layer.Markers( "Markers" );
+    			map.addLayer(markers);
+    			markers.addMarker(new OpenLayers.Marker(lonLatMarker)); 
+    			map.setCenter (lonLat, zoom);
+			</script>
+		<br>
+			<div id="osm"><p>&copy;<a href="http://www.openstreetmap.org">OpenStreetMap</a>
+   			und <a href="http://www.openstreetmap.org/copyright">Mitwirkende</a>,
+ 			<a href="http://creativecommons.org/licenses/by-sa/2.0/deed.de">CC-BY-SA</a></p>
+ 			</div>
+</atricle>
+						<br>						
+			</section><!-- end of #content -->
+
+		<aside id="sidebar"><!-- sidebar -->
+				<!-- WetterOnline Homepagewetter Beginn //-->
+<div style="position:relative;background-image:url(http://st.wetteronline.de/img/p_city_hpweather/background/braun.gif?v=1.0.528);background-repeat:repeat-x;border:1px solid #BCBCBC;width:158px;text-align:center;font-family:arial,verdana;"><a href="http://www.wetteronline.de" target="_blank" style="text-decoration:none;color:#000;outline:none;"><img src="http://st.wetteronline.de/img/logo/wetteronline_blue_114x22.png?v=1.0.528" title="WetterOnline" alt="WetterOnline" style="border: 0; padding-top: 2px;"></a><div style="font-size:12px;margin-bottom:2px; font-weight:bold; color:#000; text-align:center;">Das Wetter f&uuml;r<br />Koserow</div><iframe  marginheight="0" marginwidth="0" frameborder="0" scrolling="no" src="http://www.wetteronline.de/?pid=p_city_hpweather&amp;PLZ=17459&amp;FORMAT=long&amp;MENU=dropdown&amp;MAP=rainradar" allowtransparency="true" width="158" height="271"></iframe><div style="font-size:10px;height:18px; color:#000; text-align:center;">Mehr auf <a href="http://www.wetteronline.de/" target="_blank" title="WetterOnline Homepage" style="text-decoration:none;color:#000;">wetteronline.de</a></div></div>
+<!-- WetterOnline Homepagewetter Ende //-->
+<br><br>
+
+
+		</aside><!-- end of sidebar -->
+
+	</section><!-- end of #main content and sidebar-->
+	
+<footer>
+		<section id="footer-area">
+
+			<section id="footer-outer-block">
+						<aside class="footer-segment">
+							<h4>&nbsp;</h4>
+								<p><a href="impressum.html">Impressum</a> | <a href="impressum.html#datenschutz">Datenschutz</a></p>
+					</aside><!-- end of #fourth footer segment -->			
+				
+					<aside class="footer-segment">
+					
+					</aside><!-- end of #first footer segment -->
+
+					<aside class="footer-segment">
+					
+					</aside><!-- end of #second footer segment -->
+
+					<aside class="footer-segment">
+						
+					</aside><!-- end of #third footer segment -->
+					
+
+
+			</section><!-- end of footer-outer-block -->
+
+		</section><!-- end of footer-area -->
+	</footer>
+	
+</div><!-- #wrapper -->
+<!-- Free template created by http://freehtml5templates.com -->
+</body>
+</html>
